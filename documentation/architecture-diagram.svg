@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 650" width="1000" height="650">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B10" />
+      <stop offset="100%" stop-color="#0E1726" />
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121C2B" />
+      <stop offset="100%" stop-color="#0D1522" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="650" fill="url(#bgGrad)" />
+
+  <!-- Title Banner -->
+  <rect x="30" y="25" width="940" height="60" rx="8" fill="url(#panelGrad)" stroke="#1F2D42" stroke-width="1.5" />
+  <text x="50" y="62" font-family="-apple-system, sans-serif" font-size="20" font-weight="bold" fill="#E2E8F0">
+    ARINC834Forge Pro (v1.0.0) — Aircraft Data Interface Function (ADIF) Architecture
+  </text>
+  <text x="690" y="61" font-family="monospace" font-size="12" fill="#00E5FF">
+    ARINC 834A • ARINC 828 • FAA AC 120-76D
+  </text>
+
+  <!-- Left Block: Aircraft Control Domain (ACD) & Sensors -->
+  <g transform="translate(30, 110)" filter="url(#shadow)">
+    <rect width="260" height="490" rx="8" fill="url(#panelGrad)" stroke="#1F2D42" stroke-width="1.5" />
+    <text x="20" y="35" font-family="-apple-system, sans-serif" font-size="15" font-weight="bold" fill="#00E5FF">1. Aircraft Control Domain (ACD)</text>
+    <line x1="20" y1="48" x2="240" y2="48" stroke="#1F2D42" stroke-width="1" />
+
+    <rect x="15" y="65" width="230" height="65" rx="4" fill="#090E17" stroke="#1B283A" />
+    <text x="25" y="88" font-family="monospace" font-size="11" font-weight="bold" fill="#E2E8F0">GNSS &amp; Inertial (IRS)</text>
+    <text x="25" y="104" font-family="monospace" font-size="10" fill="#8E9CAE">WGS-84 Coordinates, Track, GS</text>
+    <text x="25" y="118" font-family="monospace" font-size="10" fill="#00E676">ARINC 429 Labels 310, 311, 312</text>
+
+    <rect x="15" y="145" width="230" height="65" rx="4" fill="#090E17" stroke="#1B283A" />
+    <text x="25" y="168" font-family="monospace" font-size="11" font-weight="bold" fill="#E2E8F0">Air Data Computer (ADC)</text>
+    <text x="25" y="184" font-family="monospace" font-size="10" fill="#8E9CAE">Pressure Alt (FL), TAS, Mach</text>
+    <text x="25" y="198" font-family="monospace" font-size="10" fill="#00B4D8">Static &amp; Total Air Temperature</text>
+
+    <rect x="15" y="225" width="230" height="65" rx="4" fill="#090E17" stroke="#1B283A" />
+    <text x="25" y="248" font-family="monospace" font-size="11" font-weight="bold" fill="#E2E8F0">Flight Management System</text>
+    <text x="25" y="264" font-family="monospace" font-size="10" fill="#8E9CAE">Active Waypoint, DTG, ETA</text>
+    <text x="25" y="278" font-family="monospace" font-size="10" fill="#8E9CAE">Origin / Dest Flight Plan Legs</text>
+
+    <rect x="15" y="305" width="230" height="65" rx="4" fill="#090E17" stroke="#1B283A" />
+    <text x="25" y="328" font-family="monospace" font-size="11" font-weight="bold" fill="#E2E8F0">Fuel &amp; Weight Sensors</text>
+    <text x="25" y="344" font-family="monospace" font-size="10" fill="#8E9CAE">Gross Weight (kg), FOB, CG%</text>
+    <text x="25" y="358" font-family="monospace" font-size="10" fill="#FFB800">Real-Time Weight &amp; Balance</text>
+
+    <rect x="15" y="385" width="230" height="75" rx="4" fill="#090E17" stroke="#1B283A" />
+    <text x="25" y="408" font-family="monospace" font-size="11" font-weight="bold" fill="#E2E8F0">Landing Discretes &amp; OOOI</text>
+    <text x="25" y="424" font-family="monospace" font-size="10" fill="#8E9CAE">Gear, Flaps, Squat Switch</text>
+    <text x="25" y="438" font-family="monospace" font-size="10" fill="#00E5FF">Parked / Taxi / Flight Phase</text>
+  </g>
+
+  <!-- Center Block: Aircraft Interface Device (AID) & Security Diode -->
+  <g transform="translate(320, 110)" filter="url(#shadow)">
+    <rect width="360" height="490" rx="8" fill="url(#panelGrad)" stroke="#1F2D42" stroke-width="1.5" />
+    <text x="20" y="35" font-family="-apple-system, sans-serif" font-size="15" font-weight="bold" fill="#00E5FF">2. AID &amp; Security Data Diode</text>
+    <line x1="20" y1="48" x2="340" y2="48" stroke="#1F2D42" stroke-width="1" />
+
+    <!-- Sub-kernel A: Hardware Data Diode -->
+    <rect x="15" y="60" width="330" height="150" rx="6" fill="#090E17" stroke="#FF2A4B" stroke-width="1.5" />
+    <text x="25" y="85" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold" fill="#FF2A4B">Unidirectional Read-Only Data Diode</text>
+    <text x="25" y="108" font-family="monospace" font-size="10" fill="#E2E8F0">• Hardware/Logical Optical Isolation Diode</text>
+    <text x="25" y="126" font-family="monospace" font-size="10" fill="#E2E8F0">• FAA AC 120-76D Security Separation Mandate</text>
+    <text x="25" y="144" font-family="monospace" font-size="10" fill="#E2E8F0">• RTCA DO-326A Airworthiness Security Defense</text>
+    <text x="25" y="162" font-family="monospace" font-size="10" fill="#00E676">• ACD -&gt; ISD Telemetry Outflow Permitted</text>
+    <text x="25" y="180" font-family="monospace" font-size="10" fill="#FF2A4B">• ISD -&gt; ACD Control Inflow 100% BLOCKED (403)</text>
+
+    <!-- Sub-kernel B: ADIF Server & Pub/Sub Broker -->
+    <rect x="15" y="230" width="330" height="245" rx="6" fill="#090E17" stroke="#00E5FF" stroke-width="1" />
+    <text x="25" y="255" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold" fill="#00E5FF">ARINC 834A ADIF Server &amp; Broker</text>
+    <text x="25" y="278" font-family="monospace" font-size="10" fill="#E2E8F0">• EFB Session Authenticator &amp; TLS 1.3</text>
+    <text x="25" y="296" font-family="monospace" font-size="10" fill="#E2E8F0">• Dynamic Pub/Sub Parameter Broker</text>
+    <text x="25" y="314" font-family="monospace" font-size="10" fill="#E2E8F0">• Sampling Rate Control: 1 Hz to 10 Hz</text>
+    <text x="25" y="332" font-family="monospace" font-size="10" fill="#E2E8F0">• Catalog: POSITION, AIR_DATA, FMS_PLAN</text>
+    <text x="25" y="350" font-family="monospace" font-size="10" fill="#E2E8F0">• Catalog: FUEL_WEIGHTS, FLIGHT_PHASE</text>
+    <text x="25" y="368" font-family="monospace" font-size="10" fill="#E2E8F0">• ARINC 834A XML Schema Serializer</text>
+    <text x="25" y="386" font-family="monospace" font-size="10" fill="#E2E8F0">• ARINC 834A JSON Wire Format Serializer</text>
+    <text x="25" y="404" font-family="monospace" font-size="10" fill="#E2E8F0">• WebSockets / REST API Telemetry Daemon</text>
+  </g>
+
+  <!-- Right Block: Information Services Domain & Pilot EFBs -->
+  <g transform="translate(710, 110)" filter="url(#shadow)">
+    <rect width="260" height="490" rx="8" fill="url(#panelGrad)" stroke="#1F2D42" stroke-width="1.5" />
+    <text x="20" y="35" font-family="-apple-system, sans-serif" font-size="15" font-weight="bold" fill="#00E5FF">3. EFB Applications (ISD)</text>
+    <line x1="20" y1="48" x2="240" y2="48" stroke="#1F2D42" stroke-width="1" />
+
+    <rect x="15" y="65" width="230" height="70" rx="4" fill="#090E17" stroke="#00E676" stroke-width="1.5" />
+    <text x="25" y="88" font-family="monospace" font-size="11" font-weight="bold" fill="#00E676">Jeppesen FliteDeck Pro</text>
+    <text x="25" y="106" font-family="monospace" font-size="10" fill="#E2E8F0">Boeing Commercial Aviation EFB</text>
+    <text x="25" y="122" font-family="monospace" font-size="10" fill="#8E9CAE">GPS Moving Map, Terminal Charts</text>
+
+    <rect x="15" y="150" width="230" height="70" rx="4" fill="#090E17" stroke="#00B4D8" stroke-width="1.5" />
+    <text x="25" y="173" font-family="monospace" font-size="11" font-weight="bold" fill="#00B4D8">ForeFlight Mobile (Class 2)</text>
+    <text x="25" y="191" font-family="monospace" font-size="10" fill="#E2E8F0">Flight Planning &amp; Synthetic Vision</text>
+    <text x="25" y="207" font-family="monospace" font-size="10" fill="#8E9CAE">ADIF Stream: 5 Hz Moving Map</text>
+
+    <rect x="15" y="235" width="230" height="70" rx="4" fill="#090E17" stroke="#FFB800" stroke-width="1.5" />
+    <text x="25" y="258" font-family="monospace" font-size="11" font-weight="bold" fill="#FFB800">Airbus Flysmart+ Suite</text>
+    <text x="25" y="276" font-family="monospace" font-size="10" fill="#E2E8F0">Airbus Cockpit Performance EFB</text>
+    <text x="25" y="292" font-family="monospace" font-size="10" fill="#8E9CAE">Takeoff &amp; Landing OPT Calculations</text>
+
+    <rect x="15" y="320" width="230" height="70" rx="4" fill="#090E17" stroke="#00E5FF" stroke-width="1.5" />
+    <text x="25" y="343" font-family="monospace" font-size="11" font-weight="bold" fill="#00E5FF">Lufthansa Lido mPilot</text>
+    <text x="25" y="361" font-family="monospace" font-size="10" fill="#E2E8F0">En-route Navigation &amp; Airport Maps</text>
+    <text x="25" y="377" font-family="monospace" font-size="10" fill="#8E9CAE">FMS Flight Plan Route Tracking</text>
+
+    <rect x="15" y="405" width="230" height="65" rx="4" fill="#090E17" stroke="#E2E8F0" stroke-width="1" />
+    <text x="25" y="428" font-family="monospace" font-size="11" font-weight="bold" fill="#E2E8F0">Connected Pilot iPads</text>
+    <text x="25" y="446" font-family="monospace" font-size="10" fill="#8E9CAE">Cockpit Window Suction Mounts</text>
+    <text x="25" y="460" font-family="monospace" font-size="10" fill="#8E9CAE">Wireless 802.11ac / Lightning Link</text>
+  </g>
+
+  <!-- Connective Arrows -->
+  <line x1="290" y1="230" x2="320" y2="230" stroke="#00B4D8" stroke-width="2" />
+  <polygon points="318,226 326,230 318,234" fill="#00B4D8" />
+
+  <line x1="290" y1="410" x2="320" y2="410" stroke="#FFB800" stroke-width="2" />
+  <polygon points="318,406 326,410 318,414" fill="#FFB800" />
+
+  <line x1="680" y1="210" x2="710" y2="210" stroke="#00E676" stroke-width="2" />
+  <polygon points="708,206 716,210 708,214" fill="#00E676" />
+
+  <line x1="680" y1="370" x2="710" y2="370" stroke="#00E5FF" stroke-width="2" />
+  <polygon points="708,366 716,370 708,374" fill="#00E5FF" />
+</svg>

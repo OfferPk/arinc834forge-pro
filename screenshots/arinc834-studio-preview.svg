@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="studioBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B10" />
+      <stop offset="100%" stop-color="#0A1017" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E1724" />
+      <stop offset="100%" stop-color="#090E16" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#studioBg)" />
+
+  <!-- Top App Bar -->
+  <rect x="20" y="20" width="1160" height="65" rx="8" fill="url(#cardGrad)" stroke="#1F2D42" stroke-width="1.5" />
+  <text x="45" y="58" font-family="-apple-system, sans-serif" font-size="22" font-weight="bold" fill="#E2E8F0">
+    📱 ARINC834Forge <tspan fill="#00E5FF">Pro</tspan> <tspan font-size="14" fill="#8E9CAE" font-weight="normal">(v1.0.0)</tspan>
+  </text>
+  <rect x="700" y="38" width="290" height="28" rx="4" fill="rgba(0,230,118,0.12)" stroke="#00E676" stroke-width="1" />
+  <text x="712" y="56" font-family="monospace" font-size="11" font-weight="bold" fill="#00E676">● ARINC 834A &amp; AC 120-76D CERTIFIED</text>
+  <text x="1030" y="56" font-family="monospace" font-size="12" fill="#8E9CAE">UTC 04:45:00Z</text>
+
+  <!-- Presets Bar -->
+  <rect x="20" y="98" width="1160" height="48" rx="6" fill="#0C131D" stroke="#1F2D42" />
+  <text x="35" y="128" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#8E9CAE">PRESETS:</text>
+
+  <rect x="110" y="108" width="200" height="28" rx="4" fill="rgba(0,229,255,0.15)" stroke="#00E5FF" />
+  <text x="122" y="126" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold" fill="#00E5FF">✈️ Oceanic Cruise (FL370 / M0.84)</text>
+
+  <rect x="320" y="108" width="200" height="28" rx="4" fill="#121C2B" stroke="#1F2D42" />
+  <text x="332" y="126" font-family="-apple-system, sans-serif" font-size="11" fill="#E2E8F0">🛫 Takeoff Climb (GW 240T)</text>
+
+  <rect x="530" y="108" width="200" height="28" rx="4" fill="#121C2B" stroke="#1F2D42" />
+  <text x="542" y="126" font-family="-apple-system, sans-serif" font-size="11" fill="#E2E8F0">🛬 Terminal Arrival (App 12L)</text>
+
+  <rect x="740" y="108" width="200" height="28" rx="4" fill="#121C2B" stroke="#1F2D42" />
+  <text x="752" y="126" font-family="-apple-system, sans-serif" font-size="11" fill="#E2E8F0">🅿️ Gate Parked (Taxi-Out OOOI)</text>
+
+  <rect x="950" y="108" width="210" height="28" rx="4" fill="#121C2B" stroke="#1F2D42" />
+  <text x="962" y="126" font-family="-apple-system, sans-serif" font-size="11" fill="#FF2A4B">🛡️ Security Diode Writeback Rejection</text>
+
+  <!-- Security Banner -->
+  <g transform="translate(20, 160)">
+    <rect width="1160" height="42" rx="6" fill="rgba(0,229,255,0.08)" stroke="#00E5FF" stroke-dasharray="4,4" />
+    <text x="20" y="26" font-family="monospace" font-size="12" font-weight="bold" fill="#00E5FF">
+      🛡️ AIRCRAFT CONTROL DOMAIN (ACD) ➔ INFORMATION SERVICES DOMAIN (ISD) [DATA DIODE ACTIVE]
+    </text>
+    <rect x="940" y="7" width="200" height="28" rx="4" fill="rgba(255,42,75,0.15)" stroke="#FF2A4B" />
+    <text x="1040" y="25" font-family="monospace" font-size="10" font-weight="bold" fill="#FF2A4B" text-anchor="middle">SIMULATE WRITEBACK (403)</text>
+  </g>
+
+  <!-- Left Column: Controls (Width 360) -->
+  <g transform="translate(20, 220)">
+    <rect width="360" height="555" rx="8" fill="url(#cardGrad)" stroke="#1F2D42" />
+    <text x="20" y="32" font-family="-apple-system, sans-serif" font-size="14" font-weight="bold" fill="#00E5FF">EFB Session &amp; Pub/Sub Broker</text>
+
+    <text x="20" y="65" font-family="-apple-system, sans-serif" font-size="11" fill="#8E9CAE">Connected EFB Application:</text>
+    <rect x="20" y="73" width="320" height="28" rx="4" fill="#090E17" stroke="#1E2D42" />
+    <text x="32" y="92" font-family="monospace" font-size="11" fill="#00E676">Jeppesen FliteDeck Pro (Boeing)</text>
+
+    <text x="20" y="125" font-family="-apple-system, sans-serif" font-size="11" fill="#8E9CAE">Active Session Token &amp; Security Role:</text>
+    <rect x="20" y="133" width="320" height="28" rx="4" fill="#090E17" stroke="#1E2D42" />
+    <text x="32" y="152" font-family="monospace" font-size="11" fill="#E2E8F0">ADIF-SES-7X9K2P [EFB_READ_ONLY]</text>
+
+    <text x="20" y="185" font-family="-apple-system, sans-serif" font-size="11" fill="#8E9CAE">Publish Rate: <tspan fill="#00B4D8" font-family="monospace" font-weight="bold">5 Hz (200 ms)</tspan> - Moving Map</text>
+    <rect x="20" y="193" width="320" height="28" rx="4" fill="#090E17" stroke="#1E2D42" />
+    <text x="32" y="212" font-family="monospace" font-size="11" fill="#00E5FF">5 Hz (200 ms) Dynamic Moving Map</text>
+
+    <!-- Subscriptions -->
+    <text x="20" y="245" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#00E5FF">Active Parameter Subscriptions</text>
+    <g transform="translate(20, 260)" font-family="monospace" font-size="11">
+      <text y="15" fill="#00E676">[✓] POSITION (Lat/Lon/Alt/Track/GS)</text>
+      <text y="35" fill="#00E676">[✓] AIR_DATA (TAS 480K / M0.84 / OAT)</text>
+      <text y="55" fill="#00E676">[✓] FLIGHT_PHASE (EN_ROUTE / OOOI)</text>
+      <text y="75" fill="#00E676">[✓] FUEL_WEIGHTS (GW 240T / FOB 52T)</text>
+      <text y="95" fill="#00E676">[✓] FMS_PLAN (OMDB -&gt; KJFK / GOMUP)</text>
+    </g>
+
+    <!-- Sliders -->
+    <text x="20" y="390" font-family="-apple-system, sans-serif" font-size="11" fill="#8E9CAE">Altitude MSL: <tspan fill="#00B4D8" font-family="monospace" font-weight="bold">37,000 ft (FL370)</tspan></text>
+    <rect x="20" y="398" width="320" height="4" rx="2" fill="#1E2A3A" />
+    <rect x="20" y="398" width="270" height="4" rx="2" fill="#00B4D8" />
+    <circle cx="290" cy="400" r="7" fill="#FFF" />
+
+    <text x="20" y="435" font-family="-apple-system, sans-serif" font-size="11" fill="#8E9CAE">Ground Speed: <tspan fill="#00B4D8" font-family="monospace" font-weight="bold">464 kts</tspan></text>
+    <rect x="20" y="443" width="320" height="4" rx="2" fill="#1E2A3A" />
+    <rect x="20" y="443" width="240" height="4" rx="2" fill="#00B4D8" />
+    <circle cx="260" cy="445" r="7" fill="#FFF" />
+
+    <text x="20" y="480" font-family="-apple-system, sans-serif" font-size="11" fill="#8E9CAE">Fuel On Board: <tspan fill="#00B4D8" font-family="monospace" font-weight="bold">52,400 kg</tspan></text>
+    <rect x="20" y="488" width="320" height="4" rx="2" fill="#1E2A3A" />
+    <rect x="20" y="488" width="180" height="4" rx="2" fill="#00B4D8" />
+    <circle cx="200" cy="490" r="7" fill="#FFF" />
+  </g>
+
+  <!-- Right Visual Panels -->
+  <!-- EFB Moving Map Plan View -->
+  <g transform="translate(400, 220)">
+    <rect width="780" height="230" rx="8" fill="#05080E" stroke="#1F2D42" />
+    <text x="20" y="28" font-family="-apple-system, sans-serif" font-size="13" font-weight="bold" fill="#00E5FF">EFB Cockpit Moving Map (ARINC 828 Display)</text>
+    <text x="500" y="28" font-family="monospace" font-size="11" fill="#00E676">ADIF 5 Hz TELEMETRY STREAMING</text>
+
+    <!-- Compass rose and sweep -->
+    <path d="M 390,200 L 250,50 A 200,200 0 0,1 530,50 Z" fill="none" stroke="#1B283A" stroke-width="1.5" />
+    <line x1="390" y1="200" x2="390" y2="40" stroke="#00B4D8" stroke-dasharray="4,4" stroke-width="1.5" />
+
+    <!-- Flight track vector -->
+    <line x1="390" y1="160" x2="390" y2="70" stroke="#00E5FF" stroke-width="2.5" />
+
+    <!-- Waypoint GOMUP -->
+    <circle cx="390" cy="70" r="5" fill="#00E676" />
+    <text x="390" y="55" font-family="monospace" font-size="11" font-weight="bold" fill="#00E676" text-anchor="middle">GOMUP (ACTIVE WPT)</text>
+    <text x="390" y="90" font-family="monospace" font-size="9" fill="#8E9CAE" text-anchor="middle">DTG: 2,450 NM • ETA: 0730Z • FL370</text>
+
+    <!-- Aircraft Symbol -->
+    <polygon points="390,150 382,170 390,164 398,170" fill="#FFF" stroke="#00E5FF" stroke-width="1.5" />
+    <text x="390" y="188" font-family="monospace" font-size="11" font-weight="bold" fill="#00E5FF" text-anchor="middle">.A6-EAA (FL370 / 464 KT / M0.84)</text>
+
+    <rect x="25" y="25" width="160" height="24" rx="4" fill="rgba(0,229,255,0.12)" stroke="#00E5FF" />
+    <text x="35" y="41" font-family="monospace" font-size="10" font-weight="bold" fill="#00E5FF">EFB MOVING MAP 5 Hz</text>
+  </g>
+
+  <!-- Wire Protocol Inspector -->
+  <g transform="translate(400, 465)">
+    <rect width="780" height="150" rx="8" fill="url(#cardGrad)" stroke="#1F2D42" />
+    <text x="20" y="24" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#00E5FF">ADIF Telemetry Wire Inspector (ARINC 834A JSON / XML)</text>
+    <text x="490" y="24" font-family="monospace" font-size="10" fill="#00E676">STANDARD: ARINC SPECIFICATION 834A</text>
+
+    <rect x="20" y="38" width="740" height="98" rx="4" fill="#04070B" stroke="#1E2D42" />
+    <text x="30" y="58" font-family="monospace" font-size="10" fill="#A0B4C8">{ "adifMessage": { "header": { "version": "1.1", "aircraftRegistration": ".A6-EAA", "dataDiodeEnforced": true },</text>
+    <text x="30" y="78" font-family="monospace" font-size="10" fill="#00E5FF">  "telemetry": { "aircraftPosition": { "lat": 25.2530, "lon": 55.3640, "altitudeMslFt": 37000, "groundSpeedKts": 464 },</text>
+    <text x="30" y="98" font-family="monospace" font-size="10" fill="#FFB800">  "airData": { "trueAirspeedKts": 480, "machNumber": 0.84, "staticAirTempC": -54 }, "flightPhase": { "oooi": "EN_ROUTE" },</text>
+    <text x="30" y="118" font-family="monospace" font-size="10" fill="#00E676">  "fuelAndWeights": { "grossWeightKg": 240000, "fobKg": 52400 }, "fmsFlightPlan": { "wpt": "GOMUP", "dtgNm": 2450 } } } }</text>
+  </g>
+
+  <!-- 10-Point Normative Auditor Table -->
+  <g transform="translate(400, 630)">
+    <rect width="780" height="145" rx="8" fill="url(#cardGrad)" stroke="#1F2D42" />
+    <text x="20" y="24" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#00E5FF">10-Point Normative ARINC 834 / AC 120-76D Compliance Audit</text>
+    <rect x="540" y="8" width="220" height="22" rx="4" fill="rgba(0,230,118,0.15)" stroke="#00E676" />
+    <text x="650" y="23" font-family="monospace" font-size="10" font-weight="bold" fill="#00E676" text-anchor="middle">SCORE: 10/10 (100.0% CERTIFIED)</text>
+
+    <g transform="translate(20, 36)" font-family="monospace" font-size="9">
+      <text y="14" fill="#00E5FF" font-weight="bold">RULE_01</text>
+      <text x="70" y="14" fill="#E2E8F0">ARINC 834 Section 3.1: EFB Session Authentication &amp; TLS Handshake</text>
+      <text x="660" y="14" fill="#00E676" font-weight="bold">● PASSED</text>
+
+      <text y="28" fill="#00E5FF" font-weight="bold">RULE_02</text>
+      <text x="70" y="28" fill="#E2E8F0">ARINC 834 Section 4.2: Pub/Sub Parameter Subscription Broker (1-10 Hz)</text>
+      <text x="660" y="28" fill="#00E676" font-weight="bold">● PASSED</text>
+
+      <text y="42" fill="#00E5FF" font-weight="bold">RULE_03</text>
+      <text x="70" y="42" fill="#E2E8F0">FAA AC 120-76D / DO-326A: Read-Only Data Diode Writeback Rejection (403)</text>
+      <text x="660" y="42" fill="#00E676" font-weight="bold">● PASSED</text>
+
+      <text y="56" fill="#00E5FF" font-weight="bold">RULE_04</text>
+      <text x="70" y="56" fill="#E2E8F0">ARINC 834 Section 5.1: Aircraft Position Telemetry Group (Lat/Lon/Alt/GS)</text>
+      <text x="660" y="56" fill="#00E676" font-weight="bold">● PASSED</text>
+
+      <text y="70" fill="#00E5FF" font-weight="bold">RULE_05</text>
+      <text x="70" y="70" fill="#E2E8F0">ARINC 834 Section 5.2: Air Data Telemetry Group (TAS 480K / Mach 0.84)</text>
+      <text x="660" y="70" fill="#00E676" font-weight="bold">● PASSED</text>
+
+      <text y="84" fill="#00E5FF" font-weight="bold">RULE_06</text>
+      <text x="70" y="84" fill="#E2E8F0">ARINC 834 Section 5.3: Flight Phase &amp; OOOI Discrete States (EN_ROUTE)</text>
+      <text x="660" y="84" fill="#00E676" font-weight="bold">● PASSED</text>
+
+      <text y="98" fill="#00E5FF" font-weight="bold">RULE_09</text>
+      <text x="70" y="98" fill="#E2E8F0">ARINC 834A Appendix B: Normative XML Schema &amp; Element Hierarchy</text>
+      <text x="660" y="98" fill="#00E676" font-weight="bold">● PASSED</text>
+    </g>
+  </g>
+</svg>
